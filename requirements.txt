@@ -1,0 +1,25 @@
+# Spotify API
+spotipy
+
+# Data Science & Database
+pandas
+psycopg2-binary
+pgvector
+python-dotenv
+
+# AI & LLM
+langchain
+langchain-openai
+langchain-community
+openai
+tiktoken
+sentence-transformers
+
+# Backend & Web
+fastapi
+uvicorn
+streamlit
+pydantic
+
+# Tools
+requests

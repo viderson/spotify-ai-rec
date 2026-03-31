@@ -1,0 +1,16 @@
+services:
+  db:
+    image: ankane/pgvector:latest  # Specjalny obraz z obsługą AI (wektorów)
+    container_name: spotify_db
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: spotify_db
+    ports:
+      - "5432:5432"                # Łączymy port bazy z portem Twojego komputera
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:                   # Dzięki temu dane nie znikną po wyłączeniu bazy

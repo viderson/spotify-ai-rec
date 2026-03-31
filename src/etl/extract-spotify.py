@@ -3,14 +3,11 @@ from spotipy.oauth2 import SpotifyOAuth
 import json
 import os
 from dotenv import load_dotenv
-import logging
+from src.utils.logger import get_logger
 import json
 
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger(__name__)
+
+logger = get_logger(__name__)
 
 load_dotenv() # Ładuje dane z pliku .env
 
